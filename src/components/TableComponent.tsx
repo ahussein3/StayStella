@@ -17,7 +17,7 @@ const Table = <T, K extends keyof T>({ data, columns }: TableProps<T, K>) => {
   
     useEffect(() => {
       // set initial value
-      const mediaWatcher = window.matchMedia("(max-width: 450px)");
+      const mediaWatcher = window.matchMedia("(max-width: 425px)");
       setIsMobile(mediaWatcher.matches);
   
       //watch for updates
